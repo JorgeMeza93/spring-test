@@ -12,6 +12,10 @@ public class AreaCalculatorService {
 	private List<Figure> figuras;
 	
 	public double calcAreasFiguras() {
-		return 0.0;
+		double area = 0;
+		for(Figure figura: figuras) {
+			area += figura.calcularArea();
+		}
+		return area;
 	}
 }
